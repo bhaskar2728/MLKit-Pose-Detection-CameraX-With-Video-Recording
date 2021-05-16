@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/previewView"/>
+
+    <Button
+        android:text="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"/>
+    <Button
+        android:text="stop"
+        android:layout_toRightOf="@id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStop"/>
+
+
+
+</RelativeLayout>
